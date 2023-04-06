@@ -1,0 +1,27 @@
+---
+export interface Props {
+  number: string;
+  email: string;
+  github: string;
+}
+
+const { number, email, github } = Astro.props;
+---
+
+<div class='contact-wrapper'>
+  <a class='contact-link' href={`tel:/${number}`} target='_blank'
+    ><button class='contact-button'>
+      <i class='fa-solid fa-phone fa-xl'></i>
+    </button></a
+  >
+  <a class='contact-link' href={`mailto:/${email}`} target='_blank'
+    ><button class='contact-button'>
+      <i class='fa-solid fa-envelope fa-xl'></i>
+    </button></a
+  >
+  <a class='contact-link' href={github} target='_blank'
+    ><button class='contact-button'>
+      <i class='fa-brands fa-github fa-xl'></i>
+    </button></a
+  >
+</div>

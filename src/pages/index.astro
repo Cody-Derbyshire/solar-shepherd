@@ -1,20 +1,169 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-
+import Header from '../components/Header.astro';
+import Carousel from '../components/Carousel.astro';
+import CollapseBtn from '../components/CollapseBtn.astro';
+import CollapseBtnMed from '../components/CollapseBtnMed.astro';
+import Contact from '../components/Contact.astro';
+import About from '../components/About.astro';
 ---
-<head>
-	<link rel="stylesheet" href="/assets/style.css" />
-</head>
 
-	<Layout title="cody derbyshire">
-		<main>
-			<h1>cody derbyshire</h1>
-		</main>
-	
-	</Layout>
-	<Card title="hmu" body="yo yo yo" href="">
-		</Card>
+<div class='page-wrapper'>
+  <div class='top-content'>
+    <Header
+      title='cody derbyshire'
+      logo='https://i.ibb.co/j6wZ0vp/CD-logo-black.png'
+      href='https://codyderbyshire.com/'
+    />
+    <About />
+  </div>
 
+  <div class='content-wrapper'>
+    <div class='sidebar'>
+      <h2 class='heading-h2'>I love to design</h2>
 
+      <Contact
+        number='+64220725530'
+        email='derbyshire@outlook.co.nz'
+        github='https://github.com/Cody-Derbyshire'
+      />
+    </div>
+    <div class='collapse-btn-wrapper'>
+      <CollapseBtn
+        title='furniture'
+        items={[
+          'https://i.ibb.co/VWzzB9F/chair2-new.webp',
+          'https://i.ibb.co/mqs1gcc/vinyl-stand2.webp',
+          'https://i.ibb.co/4NKYKQq/kumiko-lamp2.webp',
+          'https://i.ibb.co/THc3dC8/bedside-table1.webp',
+        ]}
+      />
 
+      <CollapseBtn
+        title='branding'
+        items={[
+          'https://i.ibb.co/tLxPV8x/SCALE-square-01.png',
+          'https://i.ibb.co/fQVvH0t/branding-for-website-02-1.webp',
+          'https://i.ibb.co/BtqshxV/branding-for-website-01-1.webp',
+          'https://i.ibb.co/WDVFQKT/branding-for-website-03-1.webp',
+        ]}
+      />
+      <CollapseBtn
+        title='print'
+        items={[
+          'https://i.ibb.co/mFrdq2C/WEDDING-SAVETHEDATE-SMALLER-01.webp',
+          'https://i.ibb.co/vLQ4453/MANIFEST-PROGRAMME-FINAL-thumb-01.webp',
+          'https://i.ibb.co/2dtMDfG/card-print-01.webp',
+          'https://i.ibb.co/6rs7s2Y/grace-Card-final-spread.webp',
+          'https://i.ibb.co/GT4LV1g/eva-Card-FINAL-spread.webp',
+        ]}
+      />
+      <CollapseBtn
+        title='graphics'
+        items={[
+          'https://i.ibb.co/2SJzZ99/meta-gif-background-1-FULL.webp',
+          'https://i.ibb.co/sK9g2s3/tiny-worlds-1.png',
+          'https://i.ibb.co/2d5xhSq/tiny-worlds-2.png',
+          'https://i.ibb.co/PQvZpyq/UI-GIF-01.png',
+        ]}
+      />
+      <CollapseBtn
+        title='3d'
+        items={[
+          'https://i.ibb.co/rfFK1n7/dumbpad-render-layout-SPLIT-lighter-BG-01.png',
+          'https://i.ibb.co/RTnNWTF/dumbpad-render-layout-SPLIT-lighter-BG-02.png',
+          'https://i.ibb.co/801bzPL/designed-presentation-GRADIENT-10.webp',
+          'https://i.ibb.co/jrwg788/walker2-gif-02.webp',
+        ]}
+      />
+      <CollapseBtn
+        title='motion'
+        items={[
+          'https://i.ibb.co/cFkvzFW/UI-GIF-1.gif',
+          'https://i.ibb.co/0mBSZcS/stylized-gif-SHARPER.gif',
+          'https://i.ibb.co/XJLcrZW/walker2-v1.gif',
+        ]}
+      />
+      <CollapseBtn
+        title='costume'
+        items={[
+          'https://i.ibb.co/cQXVHz3/f-flowy-draft1.webp',
+          'https://i.ibb.co/w75vH88/technical-Drawings.png',
+          'https://i.ibb.co/0qgMkQy/Merrick-illustration.webp',
+          'https://i.ibb.co/nr04zqy/cylex-illustration.webp',
+        ]}
+      />
+    </div>
+
+    <!-- medium-wrapper hidden when screen < 35rem -->
+
+    <div class='medium-wrapper'>
+      <CollapseBtnMed
+        title='furniture'
+        items={[
+          'https://i.ibb.co/VWzzB9F/chair2-new.webp',
+          'https://i.ibb.co/mqs1gcc/vinyl-stand2.webp',
+          'https://i.ibb.co/4NKYKQq/kumiko-lamp2.webp',
+          'https://i.ibb.co/THc3dC8/bedside-table1.webp',
+        ]}
+      />
+
+      <CollapseBtnMed
+        title='branding'
+        items={[
+          'https://i.ibb.co/tLxPV8x/SCALE-square-01.png',
+          'https://i.ibb.co/fQVvH0t/branding-for-website-02-1.webp',
+          'https://i.ibb.co/BtqshxV/branding-for-website-01-1.webp',
+          'https://i.ibb.co/WDVFQKT/branding-for-website-03-1.webp',
+        ]}
+      />
+      <CollapseBtnMed
+        title='print'
+        items={[
+          'https://i.ibb.co/mFrdq2C/WEDDING-SAVETHEDATE-SMALLER-01.webp',
+          'https://i.ibb.co/vLQ4453/MANIFEST-PROGRAMME-FINAL-thumb-01.webp',
+          'https://i.ibb.co/2dtMDfG/card-print-01.webp',
+          'https://i.ibb.co/6rs7s2Y/grace-Card-final-spread.webp',
+          'https://i.ibb.co/GT4LV1g/eva-Card-FINAL-spread.webp',
+        ]}
+      />
+      <CollapseBtnMed
+        title='graphics'
+        items={[
+          'https://i.ibb.co/2SJzZ99/meta-gif-background-1-FULL.webp',
+          'https://i.ibb.co/sK9g2s3/tiny-worlds-1.png',
+          'https://i.ibb.co/2d5xhSq/tiny-worlds-2.png',
+          'https://i.ibb.co/PQvZpyq/UI-GIF-01.png',
+        ]}
+      />
+      <CollapseBtnMed
+        title='3d'
+        items={[
+          'https://i.ibb.co/rfFK1n7/dumbpad-render-layout-SPLIT-lighter-BG-01.png',
+          'https://i.ibb.co/RTnNWTF/dumbpad-render-layout-SPLIT-lighter-BG-02.png',
+          'https://i.ibb.co/801bzPL/designed-presentation-GRADIENT-10.webp',
+          'https://i.ibb.co/jrwg788/walker2-gif-02.webp',
+        ]}
+      />
+      <CollapseBtnMed
+        title='motion'
+        items={[
+          'https://i.ibb.co/cFkvzFW/UI-GIF-1.gif',
+          'https://i.ibb.co/0mBSZcS/stylized-gif-SHARPER.gif',
+          'https://i.ibb.co/XJLcrZW/walker2-v1.gif',
+        ]}
+      />
+      <CollapseBtnMed
+        title='costume'
+        items={[
+          'https://i.ibb.co/cQXVHz3/f-flowy-draft1.webp',
+          'https://i.ibb.co/w75vH88/technical-Drawings.png',
+          'https://i.ibb.co/0qgMkQy/Merrick-illustration.webp',
+          'https://i.ibb.co/nr04zqy/cylex-illustration.webp',
+        ]}
+      />
+    </div>
+  </div>
+</div>
+
+<Layout title='cody derbyshire' />

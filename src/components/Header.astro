@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  logo: string;
+}
+
+const { href, title, logo } = Astro.props;
+---
+
+<div class='header-wrapper'>
+  <div class='logo-wrapper'>
+    <a href={href} target='_blank'>
+      <img class='logo-img' src={logo} alt='cody derbyshire logo image' />
+    </a>
+  </div>
+  <h1 class='heading-h1'>
+    {title}
+  </h1>
+</div>

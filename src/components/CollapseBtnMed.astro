@@ -1,0 +1,16 @@
+---
+export interface Props {
+  items: Array<string>;
+  title: string;
+}
+
+const { items, title } = Astro.props as Props;
+import Carousel from '../components/Carousel.astro';
+---
+
+<div class='container-med'>
+  <div class='title'>{title}</div>
+  <div class='content'>
+    <Carousel items={items} />
+  </div>
+</div>
