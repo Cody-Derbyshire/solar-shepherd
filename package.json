@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "host": "vite --host"
+    "host": "astro dev --host"
   },
   "dependencies": {
     "astro": "^2.1.8"

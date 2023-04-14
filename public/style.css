@@ -175,6 +175,7 @@ a:visited {
 .heading-h2 {
   display: none;
 }
+
 @media screen and (max-width: 30rem) {
   body {
     padding: 0 1rem;
@@ -319,7 +320,7 @@ a:visited {
   .medium-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    height: 66.5vh;
+    height: 75vh;
     overflow: auto;
     scroll-snap-type: y mandatory;
   }
