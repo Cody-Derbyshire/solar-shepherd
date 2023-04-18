@@ -331,9 +331,14 @@ a:visited {
     align-items: center;
     font-family: var(--mono-font);
     margin-bottom: 0.5rem;
-
-    padding: 0.9rem 0.9rem 0.9rem 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: black;
+    color: white;
+    padding: 0.9rem;
     font-size: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
   }
 
   .container-med:nth-child(even) > .title {
@@ -362,6 +367,10 @@ a:visited {
   }
 }
 @media screen and (min-width: 60rem) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
 }
 @media screen and (min-width: 80rem) {
 }
